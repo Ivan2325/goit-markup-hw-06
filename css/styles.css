@@ -243,6 +243,10 @@ margin-bottom: 8px;
 		color:#434455;
 }
 
+.media-container {
+	width: 296px;
+}
+
 .team {
 	background-color: #F4F4FD;
 /* 	padding: 120px 0;*/
@@ -808,15 +812,15 @@ border: none;
 
 			.media-container {
 				display: flex;
-				gap: 24px 61px;
 			}
 
-			.team-title {
+			.team-list {
+				gap: 61px 24px;
 
 			}
 
 			.team-list-item {
-				width: calc((100% - 24px) / 2);
+				width: calc((100% - 61px) / 2);
 
 			}
 		}
