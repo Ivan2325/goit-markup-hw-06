@@ -55,8 +55,8 @@ display: block;
 		line-height: 1.17;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
-			margin-right: 76px;
-			
+/* 			margin-right: 76px;
+ */			
 }
 
 
@@ -437,9 +437,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		line-height: 1.5;
 		letter-spacing: 0.02em;
 		color: #F4F4FD;
-		width: 264px;
-		height: 71px;
-		margin-left: 16px;
+		
 }
 
 .footer {
@@ -454,6 +452,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		display: flex;
 		align-items: baseline;
 		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		gap: 72px;
 		
 
 	}
@@ -461,20 +462,17 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .container-logo {
 	margin-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-left: 102px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 	.footer-logo-container {
 /* 		margin-right: 120px;*/
-display: flex;
+ display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 72px;
-  
+
 }
 
 .footer-logo {
@@ -484,10 +482,11 @@ color: #F4F4FD;
 .footer-logo-white {
 	display: inline-block;
 	margin-bottom: 16px;
+	margin-right: 0;
+	text-align: center;
 }
 
 .footer-social-container {
-	margin-bottom: 72px;
 	
 }
 
@@ -499,8 +498,8 @@ line-height: 24px;
 		line-height: 1.5;
 		letter-spacing: 0.02em;
 		color: #FFFFFF;
-		display: flex;
 		margin-bottom: 16px;
+		text-align: center;
 		}
 
 				.footer-social-list {
@@ -553,11 +552,14 @@ line-height: 24px;
 				line-height: 1.5;
 				letter-spacing: 0.02em;
 				color: #ffffff;
+				text-align: center;
 			}
 	
 			.footer-modal-form {
 				display: flex;
 				gap: 24px;
+				flex-direction: column;
+				align-items: center;
 			}
 	
 			.footer-modal-input {
@@ -889,6 +891,41 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 		}
+
+		.container-logo {
+			display: inline-block;
+		}
+
+		.footer-logo-container {
+			display:inline;
+			padding-left: 108px;
+		}
+     
+		.footer-text {
+			width: 264px;
+			height: 72px;
+		}
+
+		.footer-social-container {
+		}
+
+		.footer-modal-form {
+			flex-direction: row;
+			
+		}
+
+		.footer-modal-text {
+			text-align: left;
+		}
+
+		.footer-social-text {
+			text-align: left;
+		}
+
+		.footer-modal-container {
+			padding-left: 108px;
+		}
+	
 	}
 		
 
@@ -976,6 +1013,24 @@ letter-spacing: 0.02em;
 				   url(../images/people-office-tab2x-min.jpg);
 		   
 			   }
+			}
+
+			.footer {
+				padding: 100px 0;
+			}
+
+			.footer-container {
+				align-items: baseline;
+				display: flex;
+			}
+
+			.footer-logo-container {
+				margin-right: 120px;
+			
+			}
+
+			.footer-modal-form {
+				flex-direction: row;
 			}
 		}
 		
