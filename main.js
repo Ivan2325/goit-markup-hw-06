@@ -1,12 +1,15 @@
-const openBtn = document.querySelector('.hero-btn');
-const closeBtn = document.querySelector('.mob-close-btn');
-const modal = document.querySelector('.mob-menu');
+// Отримуємо елементи
+const heroBtn = document.querySelector('.hero-btn');
+const modalButton = document.querySelector('.modal-button');
+const backdrop = document.getElementById('backdrop');
 
-openBtn.addEventListener('click', () => {
-    modal.style.display = 'block'; // Відкриває модальне вікно
+// Функція для відкриття модального вікна
+heroBtn.addEventListener('click', () => {
+  backdrop.classList.add('active');
 });
 
 // Функція для закриття модального вікна
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none'; // Закриває модальне вікно
+modalButton.addEventListener('click', () => {
+  backdrop.classList.remove('active');
 });
+
